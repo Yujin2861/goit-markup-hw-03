@@ -1,3 +1,5 @@
+
+
 :root {
     --primery-text-color: #757575;
     --title-text-color: #212121;
@@ -29,6 +31,12 @@ body {
 
     text-decoration: none;
 }
+.container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
 
 .page-header .logo span {
     color:var(--logo-text-color);   
@@ -36,6 +44,7 @@ body {
 .footer .logo span {
     color:var(--hero-text-color);
 }
+
 /*СХОВАВ ВСЮДИ ТОЧКИ ТА ПІДКРЕСЛЕНЯ*/
 .list, .link, .link-map {
     list-style: none;
@@ -43,6 +52,20 @@ body {
 }
 .filter-list .link {
     list-style: none;
+}
+/*СБРОС СТИЛЕЙ*/
+.list {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 /*НАВІГІЦІЯ ШАПКА*/
 .site-nav .link {
@@ -76,9 +99,15 @@ body {
 }
 /*ГЕРОЙ*/
 .hero {
+    outline: 2px solid tomato;
     background-color:var(--hero-bg-color);
+    text-align: center;
+
+    height: 600px;
 }
 .hero-title {
+    margin-bottom: 40px;
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -91,6 +120,18 @@ body {
 }
 /*КНОПКИ ВСІ*/
 .hero-button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 216px;
+
+    /*height: 50px;
+    left: 692px;
+    top: 430px;*/
+    text-align: center;
+
+    /*border: 1px solid transparent;*/
+    
     font-weight: 700;
     font-size: 16px;
     line-height: 1.19;
@@ -99,7 +140,7 @@ body {
     background-color: var(--accent-color);
     color:var(--hero-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    
     cursor: pointer;
 }
 .hero-button:hover,
@@ -126,11 +167,20 @@ body {
     background-color: var(--accent-color);
     color:var(--hero-text-color);
 }
+
+
+
+
 /*заголовки ЧИМ МИ ЗАЙМАЭМОСЬ та НАША КОМАНДА*/
-.whatarewedoing {
+.section {
+    padding-top: 0;
+    padding-bottom: 94px;
+
     background-color:var(--main-bg-color);
 }
 .section-title {
+    margin-bottom: 50px;
+
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -152,17 +202,29 @@ body {
 }
 
 /*заголовок ПЕРЕВАГИ*/
+.section-feature {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    background-color:var(--main-bg-color);
+}
+
+
 .feature-list .title {
+    margin-bottom: 10px;
+
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
     color:var(--title-text-color);
+   
     
 }
 
 .feature-list .description {
+   
     font-size: 14px;
     line-height: 1.71;
     
@@ -173,8 +235,12 @@ body {
 /*заголовок НАША КОМАНДА*/
 .section-team {
     background-color:var(--team-bg-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .team .title {
+    margin-bottom: 10px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -227,7 +293,16 @@ body {
 
 /*ПОРТФОЛІО СПИСОК ПРОЕКТІВ*/
 
+.portfolio {
+    padding-top: 0;
+    padding-bottom: 94px;
+
+    background-color: var(--main-bg-color); /*удалить*/
+}
+
 .filter-list .title {
+    margin-bottom: 4px;
+
     font-weight: 500;
     font-size: 18px;
     line-height: 2;
