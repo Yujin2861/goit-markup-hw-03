@@ -43,12 +43,16 @@ body {
     text-decoration: none;
 }
 .container {
-    width: 1200px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 }
+.section {
+    padding: 94px 0;
+}
 .page-header {
+    background-color: var(--hero-text-color);
     border: 1px solid #ECECEC;
 }
 .page-header .logo span {
@@ -174,6 +178,7 @@ ul {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     
     cursor: pointer;
+    border: none;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -202,6 +207,7 @@ ul {
     color:var(--title-text-color);
 
     cursor: pointer;
+    border: none;
 }
 .button-filter:hover,
 .button-filter:focus {
@@ -225,17 +231,14 @@ ul {
 
 /*заголовок ПЕРЕВАГИ*/
 .section-feature {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
-    background-color:var(--main-bg-color);
+    background-color: var(--hero-text-color);
 }
 .feature-list {
     display: flex;
+    gap: 30px;
+    /*flex-wrap: wrap;*/
 }
-.feature-list .item:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 .feature-list .title {
     margin-bottom: 10px;
@@ -257,15 +260,13 @@ ul {
 }
 
 /*заголовки ЧИМ МИ ЗАЙМАЭМОСЬ та НАША КОМАНДА*/
-.section {
+.section-doing {
     padding-top: 0;
-    padding-bottom: 94px;
-
-    background-color:var(--main-bg-color);
+    background-color:var(--hero-text-color);
 }
 .doing-list {
     display: flex;
-    background-color: tomato;
+    
 }
 /*убираем нижний отступ от картинки*/
 .img-cart {
@@ -289,8 +290,6 @@ ul {
 /*заголовок НАША КОМАНДА*/
 .section-team {
     background-color:var(--team-bg-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .team {
@@ -373,12 +372,13 @@ ul {
 /*ПОРТФОЛІО СПИСОК ПРОЕКТІВ*/
 
 .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
-    background-color: var(--main-bg-color); /*удалить*/
+    background-color:var(--hero-text-color)
 }
+.container-discr {
+    padding: 20px 24px;
 
+    border: 1px solid #EEEEEE;
+}
 .filter-list {
     display: flex;
     flex-wrap: wrap;  
@@ -392,7 +392,7 @@ ul {
     /*margin-right: 30px;
     margin-bottom: 30px;*/
     /*background-color: tomato;*/
-    border-bottom: 1px solid #EEEEEE;
+    
 }
 .filter-list .item:nth-child(3n){
     margin-right: 0;
