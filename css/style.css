@@ -137,9 +137,6 @@ ul {
 
     background-color:var(--hero-bg-color);
     text-align: center;
-
-    height: 600px;
-    
 }
 .hero-title {
     margin-bottom: 40px;
